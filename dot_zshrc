@@ -93,18 +93,25 @@ alias ghci='gh run list -L 1'
 
 alias gii='git_init_ignore'
 
+# git add + git commit + git push
+gacp() {
+  git add ${2:-.} &&
+  git commit -m "$1" &&
+  git push
+}
+
 # 自动生成.gitignore
 ignore() {
   if [ -f ".gitignore" ]; then
     logRed ".gitignore已存在"
     return
   fi
-  logGreen "...正在生成.gitignore"
+  logGreen "正在生成.gitignore"
   touch .gitignore
   echo "*.DS_Store  \nnode_modules \n*.log \nidea/ \n*.local \n.DS_Store \ndist \n.cache \n.idea \nlogs \n&-debug.log \n*-error.log \n*__pycache__/" >>.gitignore
 }
 
-function git_init_ignore() {
+function ginit() {
   git init "$@"
   echo "*.DS_Store  \nnode_modules \n*.log \nidea/ \n*.local \n.DS_Store \ndist \n.cache \n.idea \nlogs \n*-debug.log \n*-error.log" >> .gitignore
 }
