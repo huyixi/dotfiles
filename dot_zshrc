@@ -94,14 +94,14 @@ alias ghci='gh run list -L 1'
 alias gii='git_init_ignore'
 
 # git add + git commit + git push
-gacp() {
+function gacp() {
   git add ${2:-.} &&
   git commit -m "$1" &&
   git push
 }
 
 # 自动生成.gitignore
-ignore() {
+function ignore() {
   if [ -f ".gitignore" ]; then
     logRed ".gitignore已存在"
     return
