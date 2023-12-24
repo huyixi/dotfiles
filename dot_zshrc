@@ -94,7 +94,7 @@ alias ghci='gh run list -L 1'
 alias gii='git_init_ignore'
 
 # git add + git commit + git push
-function gacp() {
+function gac() {
   git add ${2:-.} &&
   git commit -m "$1" &&
   git push
