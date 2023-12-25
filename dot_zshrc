@@ -316,7 +316,7 @@ alias c="code"
 alias pip='pip3'
 alias hugo="/opt/homebrew/bin/hugo"
 alias cohu="cd ~/i/huyixi.com && ~/i/huyixi.com/utils/chu.sh"
-alias ophu='cd /Applications && open -a "Github Desktop" && cd ~/i/huyixi.com/content/posts/ && open . && cd ~/i/huyixi.com/ '
+alias ophu='cd /Applications && open -a "Github Desktop" && cd ~/i/huyixi.com/content/post/ && open . && cd ~/i/huyixi.com/ '
 alias hn="~/i/huyixi.com/utils/hugo-new.sh"
 alias hs="~/i/huyixi.com/utils/hugo-server.sh"
 
