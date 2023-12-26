@@ -313,6 +313,7 @@ alias ....="cd ../../.." # 返回上上上级
 # -------------------------------- #
 alias o="open"
 alias c="code"
+alias c.="code ."
 alias pip='pip3'
 alias hugo="/opt/homebrew/bin/hugo"
 alias cohu="cd ~/i/huyixi.com && ~/i/huyixi.com/utils/chu.sh"
