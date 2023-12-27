@@ -98,6 +98,12 @@ function gac() {
   git push
 }
 
+function pu(){
+	git add . &&
+	git commit -m "chore" &&
+	git push
+}
+
 # 生成 .gitignore
 function ignore() {
   if [ -f ".gitignore" ]; then
