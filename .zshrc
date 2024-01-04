@@ -143,6 +143,12 @@ function gdc() {
 }
 
 #--------------------------#
+# script magage
+# -------------------------#
+alias cc='bash ~/i/automator/copy-clip.sh'
+
+
+#--------------------------#
 # console color
 # -------------------------#
 
@@ -200,6 +206,43 @@ logPink() {
 
 function i() {
   cd ~/i/$1
+}
+
+function wi(){
+  if [ -d ~/i/huyixi.wiki/docs ]
+  then
+    cd ~/i/huyixi.wiki/docs
+  else
+    cd ~/i/wiki/docs
+  fi
+}
+
+function wiki(){
+  if [ -d ~/i/huyixi.wiki/docs ]
+  then
+    cd ~/i/huyixi.wiki/docs
+  else
+    cd ~/i/wiki/docs
+  fi
+}
+
+
+function com(){
+  if [ -d ~/i/huyixi.com/content/post ]
+  then
+    cd ~/i/huyixi.com/content/post
+  else
+    cd ~/i/com/content/post
+  fi
+}
+
+function org(){
+  if [ -d ~/i/huyixi.org ]
+  then
+    cd ~/i/huyixi.org
+  else
+    cd ~/i/org
+  fi
 }
 
 function repros() {
@@ -318,15 +361,14 @@ alias ....="cd ../../.." # 返回上上上级
 # Alias
 # -------------------------------- #
 alias o="open"
+alias o.="open ."
 alias c="code"
 alias c.="code ."
 alias pip='pip3'
 alias hugo="/opt/homebrew/bin/hugo"
 alias cohu="cd ~/i/huyixi.com && ~/i/huyixi.com/utils/chu.sh"
-alias ophu='cd /Applications && open -a "Github Desktop" && cd ~/i/huyixi.com/content/post/ && open . && cd ~/i/huyixi.com/ '
 alias hn="~/i/huyixi.com/utils/hugo-new.sh"
 alias hs="~/i/huyixi.com/utils/hugo-server.sh"
-alias wi="open ~/i/wiki/docs/"
 
 #--------------------------#
 # Reference
