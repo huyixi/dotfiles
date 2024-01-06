@@ -202,6 +202,9 @@ logPink() {
 # `~/i` for my projects
 # `~/f` for forks
 # `~/r` for reproductions
+# Other
+# w for write
+# c for code
 # -------------------------------- #
 
 function i() {
@@ -209,6 +212,15 @@ function i() {
 }
 
 function wi(){
+  if [ -d ~/i/huyixi.wiki ]
+  then
+    cd ~/i/huyixi.wiki
+  else
+    cd ~/i/wiki
+  fi
+}
+
+function wwi(){
   if [ -d ~/i/huyixi.wiki/docs ]
   then
     cd ~/i/huyixi.wiki/docs
@@ -218,16 +230,25 @@ function wi(){
 }
 
 function wiki(){
-  if [ -d ~/i/huyixi.wiki/docs ]
+  if [ -d ~/i/huyixi.wiki ]
   then
-    cd ~/i/huyixi.wiki/docs
+    cd ~/i/huyixi.wiki
   else
-    cd ~/i/wiki/docs
+    cd ~/i/wiki
   fi
 }
 
 
 function com(){
+  if [ -d ~/i/huyixi.com ]
+  then
+    cd ~/i/huyixi.com
+  else
+    cd ~/i/com
+  fi
+}
+
+function wcom(){
   if [ -d ~/i/huyixi.com/content/post ]
   then
     cd ~/i/huyixi.com/content/post
@@ -242,6 +263,15 @@ function org(){
     cd ~/i/huyixi.org
   else
     cd ~/i/org
+  fi
+}
+
+function worg(){
+  if [ -d ~/i/huyixi.org/content/posts ]
+  then
+    cd ~/i/huyixi.org/content/posts
+  else
+    cd ~/i/org/content/posts
   fi
 }
 
@@ -376,3 +406,11 @@ alias hs="~/i/huyixi.com/utils/hugo-server.sh"
 
 # antfu: https://github.com/antfu/dotfiles/blob/main/.zshrc
 # Simon-He95: https://github.com/Simon-He95/awesome-collections/blob/bf5089729fe51251ba2338242ffdf587647caab3/zshrc/.zshrc#L164
+
+# pnpm
+export PNPM_HOME="/Users/huyixi/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
