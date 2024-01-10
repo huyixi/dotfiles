@@ -158,6 +158,7 @@ function ogr() {
 # script magage
 # -------------------------#
 alias cc='bash ~/i/automator/copy-clip.sh'
+alias bk='bash ~/i/automator/bk-dotfiles.sh'
 
 
 #--------------------------#
@@ -239,6 +240,7 @@ function wwi(){
   else
     cd ~/i/wiki/docs
   fi
+  open .
 }
 
 function wiki(){
@@ -267,6 +269,7 @@ function wcom(){
   else
     cd ~/i/com/content/post
   fi
+  open .
 }
 
 function org(){
@@ -285,6 +288,7 @@ function worg(){
   else
     cd ~/i/org/content/posts
   fi
+  open .
 }
 
 function repros() {
