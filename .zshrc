@@ -284,9 +284,9 @@ function org(){
 }
 
 function worg(){
-  if [ -d ~/i/huyixi.org/content/posts ]
+  if [ -d ~/i/huyixi.org/content ]
   then
-    cd ~/i/huyixi.org/content/posts
+    cd ~/i/huyixi.org/content
   else
     cd ~/i/org/content/posts
   fi
