@@ -254,6 +254,13 @@ function wiki(){
   fi
 }
 
+alias owi='open https://huyixi.wiki'
+alias owiki='open https://huyixi.wiki'
+alias ocom='open https://huyixi.com'
+alias oorg='open https://huyixi.org'
+alias ob='open https://huyixi.org'
+alias oblog='open https://huyixi.org'
+
 
 function com(){
   if [ -d ~/i/huyixi.com ]
