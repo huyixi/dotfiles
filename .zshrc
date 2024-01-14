@@ -183,32 +183,6 @@ color () {  # 设置颜色
 # Other
 # -------------------------#
 alias zshrc="source ~/.zshrc"
-#--------------------------#
-# Functions
-# -------------------------#
-
-logRed() {
-  echo -e "${RED} $* ${RES}"
-}
-
-logGreen() {
-  echo -e "${GREEN} $* ${RES}"
-}
-
-logYellow() {
-  echo -e "${YELLOW} $* ${RES}"
-}
-
-logBlue() {
-  echo -e "${BLUE} $* ${RES}"
-}
-
-logSkyblue() {
-  echo -e "${SKYBLUE} $* ${RES}"
-}
-logPink() {
-  echo -e "${PINK} $* ${RES}"
-}
 
 # -------------------------------- #
 # Directories
@@ -253,6 +227,12 @@ function wiki(){
     cd ~/i/wiki
   fi
 }
+# -------------------------------- #
+# Shortcut
+#
+# o for open
+# doc for document
+# -------------------------------- #
 
 alias owi='open https://huyixi.wiki'
 alias owiki='open https://huyixi.wiki'
@@ -261,6 +241,27 @@ alias oorg='open https://huyixi.org'
 alias ob='open https://huyixi.org'
 alias oblog='open https://huyixi.org'
 
+# Document shortcut
+doc_aliases=("wi" "yazi" "stylus" "styluscn")
+doc_urls=("https://huyixi.wiki" "https://yazi-rs.github.io/docs/quick-start" "https://stylus-lang.com/docs/executable.html" "https://www.stylus-lang.cn/docs/selectors.html")
+
+doc() {
+  local i=0
+  while [ $i -lt ${#doc_aliases[@]} ]; do
+    if [ "${doc_aliases[i]}" = "$1" ]; then
+      open "${doc_urls[i]}"
+      return
+    fi
+    let i++
+  done
+  echo "Unknown document: $1"
+}
+
+local i=0
+while [ $i -lt ${#doc_aliases[@]} ]; do
+  alias "doc${doc_aliases[i]}"="open ${doc_urls[i]}"
+  let i++
+done
 
 function com(){
   if [ -d ~/i/huyixi.com ]
@@ -353,6 +354,15 @@ function serve() {
   fi
 }
 source /opt/homebrew/opt/spaceship/spaceship.zsh
+
+function ya() {
+	tmp="$(mktemp -t "yazi-cwd.XXXXX")"
+	yazi "$@" --cwd-file="$tmp"
+	if cwd="$(cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
+		cd -- "$cwd"
+	fi
+	rm -f -- "$tmp"
+}
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
