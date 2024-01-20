@@ -164,25 +164,9 @@ alias bk='bash ~/i/automator/bk-dotfiles.sh'
 
 
 #--------------------------#
-# console color
-# -------------------------#
-
-RED='\e[1;31m'     # 红
-GREEN='\e[1;32m'   # 绿
-YELLOW='\e[1;33m'  # 黄
-BLUE='\e[1;34m'    # 蓝
-PINK='\e[1;35m'    # 粉红
-SKYBLUE='\e[1;96m' # 紫
-RES='\e[0m'        # 清除颜色
-
-color () {  # 设置颜色
-  gum style --foreground "$1" "$2"
-}
-
-#--------------------------#
 # Other
 # -------------------------#
-alias zshrc="source ~/.zshrc"
+alias zshrc="source ~/.zshrc && bk && gac 'update zshrc'"
 
 # -------------------------------- #
 # Directories
@@ -242,26 +226,26 @@ alias ob='open https://huyixi.org'
 alias oblog='open https://huyixi.org'
 
 # Document shortcut
-doc_aliases=("wi" "yazi" "stylus" "styluscn")
-doc_urls=("https://huyixi.wiki" "https://yazi-rs.github.io/docs/quick-start" "https://stylus-lang.com/docs/executable.html" "https://www.stylus-lang.cn/docs/selectors.html")
+# doc_aliases=("wi" "yazi" "stylus" "styluscn")
+# doc_urls=("https://huyixi.wiki" "https://yazi-rs.github.io/docs/quick-start" "https://stylus-lang.com/docs/executable.html" "https://www.stylus-lang.cn/docs/selectors.html")
 
-doc() {
-  local i=0
-  while [ $i -lt ${#doc_aliases[@]} ]; do
-    if [ "${doc_aliases[i]}" = "$1" ]; then
-      open "${doc_urls[i]}"
-      return
-    fi
-    let i++
-  done
-  echo "Unknown document: $1"
-}
+# doc() {
+#   local i=0
+#   while [ $i -lt ${#doc_aliases[@]} ]; do
+#     if [ "${doc_aliases[i]}" = "$1" ]; then
+#       open "${doc_urls[i]}"
+#       return
+#     fi
+#     let i++
+#   done
+#   echo "Unknown document: $1"
+# }
 
-local i=0
-while [ $i -lt ${#doc_aliases[@]} ]; do
-  alias "doc${doc_aliases[i]}"="open ${doc_urls[i]}"
-  let i++
-done
+# local i=0
+# while [ $i -lt ${#doc_aliases[@]} ]; do
+#   alias "doc${doc_aliases[i]}"="open ${doc_urls[i]}"
+#   let i++
+# done
 
 function com(){
   if [ -d ~/i/huyixi.com ]
@@ -379,18 +363,16 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
+export NVM_DIR="$HOME/.nvm"
+[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+
+
 # PATH Configuration
 # Adding directories to PATH for various tools and utilities
-export PATH="/usr/local/opt/ruby/bin:/opt/homebrew/opt/ruby/bin:/opt/homebrew/bin:/opt/homebrew/Caskroom/miniconda/base/bin:/opt/homebrew/opt/node@14/bin:$PATH"
-
-# NVM Initialization
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
+export PATH="/usr/local/opt/ruby/bin:/opt/homebrew/opt/ruby/bin:/opt/homebrew/bin:/opt/homebrew/Caskroom/miniconda/base/bin::$PATH"
 # Additional User Configurations (if any)
 
-export PATH="/opt/homebrew/opt/node@14/bin:$PATH"
 export PATH="/usr/local/opt/ruby/bin:$PATH"
 export PATH="/usr/local/opt/ruby/bin:$PATH"
 export PATH="/usr/local/opt/ruby/bin:$PATH"
