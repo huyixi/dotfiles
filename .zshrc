@@ -160,8 +160,7 @@ function ogr() {
 # script magage
 # -------------------------#
 alias cc='bash ~/i/automator/copy-clip.sh'
-alias bk='bash ~/i/automator/bk-dotfiles.sh'
-
+alias bk='bash ~/i/automator/backup-dotfiles.sh'
 
 #--------------------------#
 # Other
@@ -200,7 +199,6 @@ function wwi(){
   else
     cd ~/i/wiki/docs
   fi
-  open .
 }
 
 function wiki(){
@@ -224,28 +222,6 @@ alias ocom='open https://huyixi.com'
 alias oorg='open https://huyixi.org'
 alias ob='open https://huyixi.org'
 alias oblog='open https://huyixi.org'
-
-# Document shortcut
-# doc_aliases=("wi" "yazi" "stylus" "styluscn")
-# doc_urls=("https://huyixi.wiki" "https://yazi-rs.github.io/docs/quick-start" "https://stylus-lang.com/docs/executable.html" "https://www.stylus-lang.cn/docs/selectors.html")
-
-# doc() {
-#   local i=0
-#   while [ $i -lt ${#doc_aliases[@]} ]; do
-#     if [ "${doc_aliases[i]}" = "$1" ]; then
-#       open "${doc_urls[i]}"
-#       return
-#     fi
-#     let i++
-#   done
-#   echo "Unknown document: $1"
-# }
-
-# local i=0
-# while [ $i -lt ${#doc_aliases[@]} ]; do
-#   alias "doc${doc_aliases[i]}"="open ${doc_urls[i]}"
-#   let i++
-# done
 
 function com(){
   if [ -d ~/i/huyixi.com ]
@@ -367,7 +343,6 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
 [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 
-
 # PATH Configuration
 # Adding directories to PATH for various tools and utilities
 export PATH="/usr/local/opt/ruby/bin:/opt/homebrew/opt/ruby/bin:/opt/homebrew/bin:/opt/homebrew/Caskroom/miniconda/base/bin::$PATH"
@@ -414,8 +389,8 @@ alias c.="code ."
 alias pip='pip3'
 alias hugo="/opt/homebrew/bin/hugo"
 alias cohu="cd ~/i/huyixi.com && ~/i/huyixi.com/utils/chu.sh"
-alias hn="~/i/huyixi.com/utils/hugo-new.sh"
-alias hs="~/i/huyixi.com/utils/hugo-server.sh"
+alias hn="~/i/huyixi.org/utils/hugo-new.sh"
+alias hs="~/i/utils/hugo-server.sh"
 
 #--------------------------#
 # Reference
