@@ -23,6 +23,7 @@ source $ZSH/oh-my-zsh.sh
 # -------------------------------- #
 # https://github.com/antfu/ni
 
+alias ni="pnpm init"
 alias nio="ni --prefer-offline"
 alias s="nr start"
 alias d="nr dev"
@@ -365,6 +366,7 @@ export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 export PATH="/opt/homebrew/opt/openjdk@17/bin:$PATH"
 export JAVA_HOME=/opt/homebrew/Cellar/openjdk@17/17.0.9/libexec/openjdk.jdk/Contents/Home
+export YAZI_CONFIG_HOME=~/.config/yazi
 source /opt/homebrew/opt/spaceship/spaceship.zsh
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
