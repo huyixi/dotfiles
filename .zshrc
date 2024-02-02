@@ -23,7 +23,7 @@ source $ZSH/oh-my-zsh.sh
 # -------------------------------- #
 # https://github.com/antfu/ni
 
-alias ni="pnpm init"
+alias ni="pnpm install"
 alias nio="ni --prefer-offline"
 alias s="nr start"
 alias d="nr dev"
@@ -166,7 +166,7 @@ alias bk='bash ~/i/automator/backup-dotfiles.sh'
 #--------------------------#
 # Other
 # -------------------------#
-alias zshrc="source ~/.zshrc && bk && gac 'update zshrc'"
+alias zshrc="source ~/.zshrc && cd ~/i/dotfiles && bk && gac 'update zshrc'"
 
 # -------------------------------- #
 # Directories
