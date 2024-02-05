@@ -39,6 +39,7 @@ alias lint="nr lint"
 alias lintf="nr lint --fix"
 alias release="nr release"
 alias re="nr release"
+alias clean="sudo /usr/local/bin/mac-cleanup"
 
 # -------------------------------- #
 # Git
