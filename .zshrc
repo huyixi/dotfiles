@@ -11,7 +11,6 @@ plugins=(
   zsh-syntax-highlighting
   zsh-z
   autojump
-  web-search
 )
 
 # https://ohmyz.sh/
