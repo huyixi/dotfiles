@@ -262,11 +262,11 @@ function worg(){
   open .
 }
 
-function repros() {
+function repro() {
   cd ~/r/$1
 }
 
-function forks() {
+function fork() {
   cd ~/f/$1
 }
 
