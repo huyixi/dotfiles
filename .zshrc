@@ -123,6 +123,8 @@ function ginit() {
   echo "*.DS_Store  \nnode_modules \n*.log \nidea/ \n*.local \n.DS_Store \ndist \n.cache \n.idea \nlogs \n*-debug.log \n*-error.log \n*__pycache__/" >> .gitignore
   current_folder=${PWD##*/}
   echo "# $current_folder" > README.md
+  git commit -m "first commit"
+  git branch -M main
 }
 
 function glp() {
