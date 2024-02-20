@@ -246,7 +246,7 @@ function wcom(){
   open .
 }
 
-function org(){
+function bg(){
   if [ -d ~/i/huyixi.org ]
   then
     cd ~/i/huyixi.org

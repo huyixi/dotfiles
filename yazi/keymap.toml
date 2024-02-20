@@ -146,6 +146,7 @@ keymap = [
 	{ on = [ "g", "d", "t" ],       exec = "cd ~/Desktop",   desc = "Go to the Desktop directory" },
 	{ on = [ "g", "t" ],       exec = "cd /tmp",          desc = "Go to the temporary directory" },
 	{ on = [ "g", "w" ],       exec = "cd ~/i/huyixi.wiki/docs/",          desc = "Go to the huyixi.wiki directory" },
+	{ on = [ "g", "l" ],       exec = "cd ~/i/learn/",          desc = "Go to the Learn directory" },
 	{ on = [ "g", "<Space>" ], exec = "cd --interactive", desc = "Go to a directory interactively" },
 
 	# Help
