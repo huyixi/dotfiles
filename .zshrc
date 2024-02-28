@@ -154,42 +154,17 @@ function gdc() {
   fi
 }
 
-# open git remote repository
-# function ogr() {
-#     local remote_url=$(git config --get remote.origin.url)
-#     if [[ "$OSTYPE" == "darwin"* ]]; then
-#         open $remote_url
-#     elif [[ "$OSTYPE" == "linux-gnu"* ]]; then
-#         xdg-open $remote_url
-#     else
-#         echo "Unsupported OS type: $OSTYPE"
-#     fi
-# }
-function ogr() {
-  local remote_url=$(git config --get remote.origin.url)
-  # Convert SSH format to HTTPS format if necessary
-  if [[ "$remote_url" == git@github.com:* ]]; then
-    remote_url="https://github.com/${remote_url#*:}"
-    remote_url="${remote_url%.git}"
-  fi
-  if [[ "$OSTYPE" == "darwin"* ]]; then
-    open $remote_url
-  elif [[ "$OSTYPE" == "linux-gnu"* ]]; then
-    xdg-open $remote_url
-  else
-    echo "Unsupported OS type: $OSTYPE"
-  fi
-}
-
 #--------------------------#
 # script magage
 # -------------------------#
+
 alias cc='bash ~/i/automator/copy-clip.sh'
 alias bk='bash ~/i/automator/backup-dotfiles.sh'
 
 #--------------------------#
 # Other
 # -------------------------#
+
 alias zshrc="source ~/.zshrc && cd ~/i/dotfiles && bk && gac 'update zshrc'"
 
 # -------------------------------- #
@@ -290,7 +265,7 @@ function repro() {
   cd ~/r/$1
 }
 
-function fork() {
+function forks() {
   cd ~/f/$1
 }
 
