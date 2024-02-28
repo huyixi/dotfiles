@@ -41,6 +41,12 @@ alias re="nr release"
 alias clean="sudo /usr/local/bin/mac-cleanup"
 
 # -------------------------------- #
+# Rust
+# -------------------------------- #
+
+alias cr="cargo run"
+
+# -------------------------------- #
 # Git
 # -------------------------------- #
 
@@ -395,7 +401,6 @@ alias pip='pip3'
 alias hugo="/opt/homebrew/bin/hugo"
 alias cohu="cd ~/i/huyixi.com && ~/i/huyixi.com/utils/chu.sh"
 alias hn="~/i/huyixi.org/utils/hugo-new.sh"
-alias hs="~/i/utils/hugo-server.sh"
 
 #--------------------------#
 # Reference
