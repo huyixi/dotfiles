@@ -155,15 +155,30 @@ function gdc() {
 }
 
 # open git remote repository
+# function ogr() {
+#     local remote_url=$(git config --get remote.origin.url)
+#     if [[ "$OSTYPE" == "darwin"* ]]; then
+#         open $remote_url
+#     elif [[ "$OSTYPE" == "linux-gnu"* ]]; then
+#         xdg-open $remote_url
+#     else
+#         echo "Unsupported OS type: $OSTYPE"
+#     fi
+# }
 function ogr() {
-    local remote_url=$(git config --get remote.origin.url)
-    if [[ "$OSTYPE" == "darwin"* ]]; then
-        open $remote_url
-    elif [[ "$OSTYPE" == "linux-gnu"* ]]; then
-        xdg-open $remote_url
-    else
-        echo "Unsupported OS type: $OSTYPE"
-    fi
+  local remote_url=$(git config --get remote.origin.url)
+  # Convert SSH format to HTTPS format if necessary
+  if [[ "$remote_url" == git@github.com:* ]]; then
+    remote_url="https://github.com/${remote_url#*:}"
+    remote_url="${remote_url%.git}"
+  fi
+  if [[ "$OSTYPE" == "darwin"* ]]; then
+    open $remote_url
+  elif [[ "$OSTYPE" == "linux-gnu"* ]]; then
+    xdg-open $remote_url
+  else
+    echo "Unsupported OS type: $OSTYPE"
+  fi
 }
 
 #--------------------------#
