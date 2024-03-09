@@ -26,6 +26,7 @@ alias ni="pnpm install"
 alias nio="ni --prefer-offline"
 alias s="nr start"
 alias d="nr dev"
+alias do="nr dev -o"
 alias b="nr build"
 alias bw="nr build --watch"
 alias t="nr test"
@@ -216,13 +217,6 @@ function wiki(){
 # doc for document
 # -------------------------------- #
 
-alias owi='open https://huyixi.wiki'
-alias owiki='open https://huyixi.wiki'
-alias ocom='open https://huyixi.com'
-alias oorg='open https://huyixi.org'
-alias ob='open https://huyixi.org'
-alias oblog='open https://huyixi.org'
-
 function com(){
   if [ -d ~/i/huyixi.com ]
   then
@@ -261,7 +255,7 @@ function worg(){
   open .
 }
 
-function repro() {
+function repros() {
   cd ~/r/$1
 }
 
@@ -383,13 +377,13 @@ alias ....="cd ../../.." # 返回上上上级
 # -------------------------------- #
 # Alias
 # -------------------------------- #
+
 alias o="open"
 alias o.="open ."
 alias c="code"
 alias c.="code ."
 alias pip='pip3'
 alias hugo="/opt/homebrew/bin/hugo"
-alias cohu="cd ~/i/huyixi.com && ~/i/huyixi.com/utils/chu.sh"
 alias hn="~/i/huyixi.org/utils/hugo-new.sh"
 
 #--------------------------#
