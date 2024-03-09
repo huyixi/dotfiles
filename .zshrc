@@ -29,7 +29,7 @@ alias ni="pnpm install"
 alias nio="ni --prefer-offline"
 alias s="nr start"
 alias d="nr dev"
-alias do="nr dev -o"
+alias dop="nr dev -o"
 alias b="nr build"
 alias bw="nr build --watch"
 alias t="nr test"
@@ -326,9 +326,14 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
+# -------------------------------- #
+# nvm
+#
+# -------------------------------- #
+
 export NVM_DIR="$HOME/.nvm"
-[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
-[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+  [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+  [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 
 # PATH Configuration
 # Adding directories to PATH for various tools and utilities
