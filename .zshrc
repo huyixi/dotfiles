@@ -1,5 +1,6 @@
 # git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt" --depth=1
 # ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
+
 ZSH_THEME="spaceship"
 
 # git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
@@ -16,6 +17,8 @@ plugins=(
 # https://ohmyz.sh/
 export ZSH="$HOME/.oh-my-zsh"
 source $ZSH/oh-my-zsh.sh
+source /opt/homebrew/opt/spaceship/spaceship.zsh
+source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # -------------------------------- #
 # Node Package Manager
@@ -210,6 +213,7 @@ function wiki(){
     cd ~/i/wiki
   fi
 }
+
 # -------------------------------- #
 # Shortcut
 #
@@ -243,16 +247,6 @@ function bg(){
   else
     cd ~/i/org
   fi
-}
-
-function worg(){
-  if [ -d ~/i/huyixi.org/content ]
-  then
-    cd ~/i/huyixi.org/content
-  else
-    cd ~/i/org/content/posts
-  fi
-  open .
 }
 
 function repros() {
@@ -307,7 +301,6 @@ function serve() {
     live-server $1
   fi
 }
-source /opt/homebrew/opt/spaceship/spaceship.zsh
 
 function ya() {
 	tmp="$(mktemp -t "yazi-cwd.XXXXX")"
@@ -360,8 +353,6 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 export PATH="/opt/homebrew/opt/openjdk@17/bin:$PATH"
 export JAVA_HOME=/opt/homebrew/Cellar/openjdk@17/17.0.9/libexec/openjdk.jdk/Contents/Home
 export YAZI_CONFIG_HOME=~/.config/yazi
-source /opt/homebrew/opt/spaceship/spaceship.zsh
-source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 #--------------------------#
 # project simple
