@@ -128,6 +128,7 @@ function ignore() {
   echo "*.DS_Store  \nnode_modules \n*.log \nidea/ \n*.local \n.DS_Store \ndist \n.cache \n.idea \nlogs \n&-debug.log \n*-error.log \n*__pycache__/" >>.gitignore
 }
 
+# git 仓库初始化
 function ginit() {
   git init "$@"
   echo "*.DS_Store  \nnode_modules \n*.log \nidea/ \n*.local \n.DS_Store \ndist \n.cache \n.idea \nlogs \n*-debug.log \n*-error.log \n*__pycache__/" >> .gitignore
@@ -162,13 +163,7 @@ function gdc() {
 # script magage
 # -------------------------#
 
-alias cc='bash ~/i/automator/copy-clip.sh'
 alias bk='bash ~/i/automator/backup-dotfiles.sh'
-
-#--------------------------#
-# Other
-# -------------------------#
-
 alias zshrc="source ~/.zshrc && cd ~/i/dotfiles && bk && gac 'update zshrc'"
 
 # -------------------------------- #
@@ -185,6 +180,14 @@ alias zshrc="source ~/.zshrc && cd ~/i/dotfiles && bk && gac 'update zshrc'"
 
 function i() {
   cd ~/i/$1
+}
+
+function r() {
+  cd ~/r/$1
+}
+
+function f() {
+  cd ~/f/$1
 }
 
 function wi(){
