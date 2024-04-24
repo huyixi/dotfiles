@@ -286,11 +286,11 @@ function clonei() {
 }
 
 function cloner() {
-  repros && clone "$@" && code . && cd ~2
+  r && clone "$@" && code . && cd ~2
 }
 
 function clonef() {
-  forks && clone "$@" && code . && cd ~2
+  f && clone "$@" && code . && cd ~2
 }
 
 function ci() {
