@@ -246,23 +246,19 @@ function dir() {
 }
 
 function clone() {
-  if [[ -z $2 ]] then
-    hub clone "$@" && cd "$(basename "$1" .git)"
-  else
-    hub clone "$@" && cd "$2"
-  fi
+  hub clone "$@" && cd "$(basename "$1" .git)"
 }
 
 function clonei() {
-  i && clone "$@" && code . && cd ~2
+  i && clone "$@" && code .
 }
 
 function cloner() {
-  r && clone "$@" && code . && cd ~2
+  r && clone "$@" && code .
 }
 
 function clonef() {
-  f && clone "$@" && code . && cd ~2
+  f && clone "$@" && code .
 }
 
 function serve() {
