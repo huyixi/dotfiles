@@ -199,15 +199,6 @@ function wi(){
   fi
 }
 
-function wwi(){
-  if [ -d ~/i/huyixi.wiki/docs ]
-  then
-    cd ~/i/huyixi.wiki/docs
-  else
-    cd ~/i/wiki/docs
-  fi
-}
-
 function wiki(){
   if [ -d ~/i/huyixi.wiki ]
   then
@@ -216,13 +207,6 @@ function wiki(){
     cd ~/i/wiki
   fi
 }
-
-# -------------------------------- #
-# Shortcut
-#
-# o for open
-# doc for document
-# -------------------------------- #
 
 function com(){
   if [ -d ~/i/huyixi.com ]
@@ -233,17 +217,7 @@ function com(){
   fi
 }
 
-function wcom(){
-  if [ -d ~/i/huyixi.com/content/post ]
-  then
-    cd ~/i/huyixi.com/content/post
-  else
-    cd ~/i/com/content/post
-  fi
-  open .
-}
-
-function bg(){
+function blog(){
   if [ -d ~/i/huyixi.org ]
   then
     cd ~/i/huyixi.org
@@ -252,13 +226,12 @@ function bg(){
   fi
 }
 
-function repros() {
-  cd ~/r/$1
-}
-
-function forks() {
-  cd ~/f/$1
-}
+# -------------------------------- #
+# Shortcut
+#
+# o for open
+# doc for document
+# -------------------------------- #
 
 function pr() {
   if [ $1 = "ls" ]; then
@@ -280,7 +253,6 @@ function clone() {
   fi
 }
 
-# Clone to ~/i and cd to it
 function clonei() {
   i && clone "$@" && code . && cd ~2
 }
@@ -291,10 +263,6 @@ function cloner() {
 
 function clonef() {
   f && clone "$@" && code . && cd ~2
-}
-
-function ci() {
-  i && code "$@" && cd -
 }
 
 function serve() {
@@ -383,7 +351,7 @@ alias c="code"
 alias c.="code ."
 alias pip='pip3'
 alias hugo="/opt/homebrew/bin/hugo"
-alias hn="~/i/huyixi.org/utils/hugo-new.sh"
+alias hugonew="~/i/huyixi.org/utils/hugo-new.sh"
 
 #--------------------------#
 # Reference
