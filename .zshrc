@@ -191,21 +191,11 @@ function f() {
 }
 
 function wi(){
-  if [ -d ~/i/huyixi.wiki ]
-  then
-    cd ~/i/huyixi.wiki
-  else
-    cd ~/i/wiki
-  fi
+    cd ~/i/huyixi.wiki/docs/$1
 }
 
 function wiki(){
-  if [ -d ~/i/huyixi.wiki ]
-  then
-    cd ~/i/huyixi.wiki
-  else
-    cd ~/i/wiki
-  fi
+    cd ~/i/huyixi.wiki/docs/$1
 }
 
 function com(){
