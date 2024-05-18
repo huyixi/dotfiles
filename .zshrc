@@ -338,6 +338,7 @@ alias c.="code ."
 alias pip='pip3'
 alias hugo="/opt/homebrew/bin/hugo"
 alias hugonew="~/i/huyixi.org/utils/hugo-new.sh"
+alias hs="~/i/utils/hugo-server.sh"
 
 #--------------------------#
 # Reference
