@@ -21,6 +21,12 @@ source /opt/homebrew/opt/spaceship/spaceship.zsh
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # -------------------------------- #
+# Alias
+# -------------------------------- #
+
+alias desktop="cd ~/desktop"
+
+# -------------------------------- #
 # Node Package Manager
 # -------------------------------- #
 # https://github.com/antfu/ni
