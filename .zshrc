@@ -214,11 +214,11 @@ function com(){
 }
 
 function blog(){
-  if [ -d ~/i/huyixi.org ]
+  if [ -d ~/i/Blog ]
   then
-    cd ~/i/huyixi.org
+    cd ~/i/Blog
   else
-    cd ~/i/org
+    cd ~/i/com
   fi
 }
 
