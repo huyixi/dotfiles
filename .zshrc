@@ -222,6 +222,10 @@ function blog(){
   fi
 }
 
+function weekly(){
+	cd ~/i/weekly
+}
+
 # -------------------------------- #
 # Shortcut
 #
