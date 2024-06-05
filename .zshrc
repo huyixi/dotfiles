@@ -25,6 +25,7 @@ source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # -------------------------------- #
 
 alias desktop="cd ~/desktop"
+alias cpu="sudo mactop"
 
 # -------------------------------- #
 # Node Package Manager
