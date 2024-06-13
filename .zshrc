@@ -29,8 +29,8 @@ alias cpu="sudo mactop"
 
 # Folder Alias
 
-alias world="cd ~/i/hello-world"
-alias helloworld="cd ~/i/hello-world"
+alias world="cd ~/i/hello-world/docs"
+alias helloworld="cd ~/i/hello-world/docs"
 
 # -------------------------------- #
 # Node Package Manager
