@@ -27,6 +27,11 @@ source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 alias desktop="cd ~/desktop"
 alias cpu="sudo mactop"
 
+# Folder Alias
+
+alias world="cd ~/i/hello-world"
+alias helloworld="cd ~/i/hello-world"
+
 # -------------------------------- #
 # Node Package Manager
 # -------------------------------- #
