@@ -30,6 +30,9 @@ alias get_files_content='/Users/huyixi/i/utils/get_files_content/target/release/
 
 # Folder Alias
 
+alias draft="cd ~/i/draft"
+alias drf="cd ~/i/draft"
+alias dft="cd ~/i/draft"
 alias world="cd ~/i/hello-world/docs"
 alias helloworld="cd ~/i/hello-world/docs"
 
