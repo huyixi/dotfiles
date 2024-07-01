@@ -34,7 +34,7 @@ alias toggle-input-method='/Users/huyixi/i/utils/toggle-input-method/target/rele
 alias draft="cd ~/i/draft"
 alias drf="cd ~/i/draft"
 alias dft="cd ~/i/draft"
-alias world="cd ~/i/hello-world/docs"
+alias world="cd ~/i/world/docs"
 alias helloworld="cd ~/i/hello-world/docs"
 
 # -------------------------------- #
