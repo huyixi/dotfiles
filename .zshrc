@@ -27,6 +27,7 @@ source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 alias desktop="cd ~/desktop"
 alias cpu="sudo mactop"
 alias get_files_content='/Users/huyixi/i/utils/get_files_content/target/release/get_files_content'
+alias toggle-input-method='/Users/huyixi/i/utils/toggle-input-method/target/release/toggle-input-method'
 
 # Folder Alias
 
