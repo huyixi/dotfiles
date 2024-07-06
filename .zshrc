@@ -36,6 +36,8 @@ alias drf="cd ~/i/draft"
 alias dft="cd ~/i/draft"
 alias world="cd ~/i/world/docs"
 alias helloworld="cd ~/i/hello-world/docs"
+alias week="cd ~/i/weekly"
+alias weekly="cd ~/i/weekly"
 
 # -------------------------------- #
 # Node Package Manager
@@ -231,10 +233,6 @@ function blog(){
   else
     cd ~/i/com
   fi
-}
-
-function weekly(){
-	cd ~/i/weekly
 }
 
 # -------------------------------- #
