@@ -189,7 +189,7 @@ function gdc() {
 # -------------------------#
 
 alias bk='bash ~/i/automator/backup-dotfiles.sh'
-alias zshrc="source ~/.zshrc && cd ~/i/dotfiles && bk && gac 'update zshrc'"
+alias zshrc="source ~/.zshrc && cd ~/i/dotfiles && bk && gac 'update zshrc' && cd -"
 
 # -------------------------------- #
 # Directories
