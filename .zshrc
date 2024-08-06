@@ -70,6 +70,12 @@ alias clean="sudo /usr/local/bin/mac-cleanup"
 alias cr="cargo run"
 
 # -------------------------------- #
+# Ruby
+# -------------------------------- #
+
+alias cr="cargo run"
+
+# -------------------------------- #
 # Git
 # -------------------------------- #
 
@@ -304,7 +310,6 @@ unset __conda_setup
 
 # -------------------------------- #
 # nvm
-#
 # -------------------------------- #
 
 export NVM_DIR="$HOME/.nvm"
@@ -314,8 +319,8 @@ export NVM_DIR="$HOME/.nvm"
 # PATH Configuration
 # Adding directories to PATH for various tools and utilities
 export PATH="/usr/local/opt/ruby/bin:/opt/homebrew/opt/ruby/bin:/opt/homebrew/bin:/opt/homebrew/Caskroom/miniconda/base/bin::$PATH"
-# Additional User Configurations (if any)
 
+# Additional User Configurations (if any)
 export PATH="/usr/local/opt/ruby/bin:$PATH"
 export PATH="/usr/local/opt/ruby/bin:$PATH"
 export PATH="/usr/local/opt/ruby/bin:$PATH"
@@ -324,6 +329,7 @@ export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
 export PATH="/opt/homebrew/bin:$PATH"
 export PATH="/opt/homebrew/miniconda/bin:$PATH"
 export JAVA_HOME="/Library/Java/JavaVirtualMachines/zulu-11.jdk/Contents/Home"
+eval "$(rbenv init -)"
 
 # bun completions
 [ -s "/Users/huyixi/.bun/_bun" ] && source "/Users/huyixi/.bun/_bun"
@@ -379,3 +385,6 @@ esac
 # mdbook-epub
 export PATH="$PATH:/Users/huyixi/.cargo/bin"
 # mdbook-epub end
+export PNPM_HOME="/Users/huyixi/Library/pnpm"
+export PATH="$PNPM_HOME:$PATH"
+export PATH="$PATH:$(npm bin -g)"
