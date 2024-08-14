@@ -28,6 +28,8 @@ source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 alias cpu="sudo mactop"
 alias get_files_content='/Users/huyixi/i/utils/get_files_content/target/release/get_files_content'
 alias toggle-input-method='/Users/huyixi/i/utils/toggle-input-method/target/release/toggle-input-method'
+alias bk='bash ~/i/automator/backup-dotfiles.sh'
+alias zshrc="source ~/.zshrc && cd ~/i/dotfiles && bk && gac 'update zshrc' && cd -"
 
 # Folder Alias
 
@@ -185,13 +187,6 @@ function gdc() {
     git diff --color --cached $1 | diff-so-fancy
   fi
 }
-
-#--------------------------#
-# script magage
-# -------------------------#
-
-alias bk='bash ~/i/automator/backup-dotfiles.sh'
-alias zshrc="source ~/.zshrc && cd ~/i/dotfiles && bk && gac 'update zshrc' && cd -"
 
 # -------------------------------- #
 # Directories
