@@ -24,13 +24,14 @@ source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # Alias
 # -------------------------------- #
 
-alias desktop="cd ~/desktop"
+# Script Alias
 alias cpu="sudo mactop"
 alias get_files_content='/Users/huyixi/i/utils/get_files_content/target/release/get_files_content'
 alias toggle-input-method='/Users/huyixi/i/utils/toggle-input-method/target/release/toggle-input-method'
 
 # Folder Alias
 
+alias desktop="cd ~/desktop"
 alias draft="cd ~/i/draft"
 alias drf="cd ~/i/draft"
 alias dft="cd ~/i/draft"
@@ -38,6 +39,7 @@ alias world="cd ~/i/world/docs"
 alias helloworld="cd ~/i/hello-world/docs"
 alias week="cd ~/i/weekly"
 alias weekly="cd ~/i/weekly"
+alias temp="cd ~/i/temp"
 
 # -------------------------------- #
 # Node Package Manager
