@@ -34,6 +34,7 @@ alias zshrc="source ~/.zshrc && cd ~/i/dotfiles && bk && gac 'update zshrc' && c
 # Folder Alias
 
 alias desktop="cd ~/desktop"
+alias desk="cd ~/desktop"
 alias draft="cd ~/i/draft"
 alias drf="cd ~/i/draft"
 alias dft="cd ~/i/draft"
