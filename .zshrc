@@ -169,6 +169,14 @@ function ginit() {
   git branch -M main
 }
 
+function gignore(){
+  touch .gitignore
+  echo "*.DS_Store  \nnode_modules \n*.log \nidea/ \n*.local \n.DS_Store \ndist \n.cache \n.idea \nlogs \n*-debug.log \n*-error.log \n*__pycache__/" >> .gitignore
+  git add .gitignore
+  git commit -m "feat: add .gitignore"
+  git push
+}
+
 function glp() {
   git --no-pager log -$1
 }
