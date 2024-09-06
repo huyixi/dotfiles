@@ -43,6 +43,7 @@ alias helloworld="cd ~/i/hello-world/docs"
 alias week="cd ~/i/weekly"
 alias weekly="cd ~/i/weekly"
 alias temp="cd ~/i/temp"
+alias se="cd ~/i/software-engineering-interview-directory"
 
 # -------------------------------- #
 # Node Package Manager
