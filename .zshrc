@@ -44,6 +44,7 @@ alias week="cd ~/i/weekly"
 alias weekly="cd ~/i/weekly"
 alias temp="cd ~/i/temp"
 alias se="cd ~/i/software-engineer-interview-guide"
+alias note="cd ~/i/note"
 
 # -------------------------------- #
 # Node Package Manager
