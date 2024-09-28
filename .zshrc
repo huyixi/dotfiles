@@ -33,15 +33,19 @@ alias zshrc="source ~/.zshrc && cd ~/i/dotfiles && bk && gac 'update zshrc' && c
 
 # Folder Alias
 
+alias com="cd ~/i/huyixi.com"
+alias blog="cd ~/i/Blog/content"
+alias wiki="cd ~/i/huyixi.wiki/docs"
+alias wi="cd ~/i/huyixi.wiki/docs"
 alias desktop="cd ~/desktop"
 alias desk="cd ~/desktop"
 alias draft="cd ~/i/draft"
 alias drf="cd ~/i/draft"
 alias dft="cd ~/i/draft"
-alias world="cd ~/i/world/docs"
 alias helloworld="cd ~/i/hello-world/docs"
-alias week="cd ~/i/weekly"
+alias world="cd ~/i/world/docs"
 alias weekly="cd ~/i/weekly"
+alias week="cd ~/i/weekly"
 alias temp="cd ~/i/temp"
 alias se="cd ~/i/software-engineer-interview-guide"
 alias note="cd ~/i/note"
@@ -223,37 +227,10 @@ function f() {
   cd ~/f/$1
 }
 
-function wi(){
-    cd ~/i/huyixi.wiki/docs/$1
-}
-
-function wiki(){
-    cd ~/i/huyixi.wiki/docs/$1
-}
-
-function com(){
-  if [ -d ~/i/huyixi.com ]
-  then
-    cd ~/i/huyixi.com
-  else
-    cd ~/i/com
-  fi
-}
-
-function blog(){
-  if [ -d ~/i/Blog/content ]
-  then
-    cd ~/i/Blog/content
-  else
-    echo "The path ~/i/Blog/content does not exist."
-  fi
-}
-
 # -------------------------------- #
 # Shortcut
 #
 # o for open
-# doc for document
 # -------------------------------- #
 
 function pr() {
