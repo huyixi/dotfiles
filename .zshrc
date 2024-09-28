@@ -241,11 +241,11 @@ function com(){
 }
 
 function blog(){
-  if [ -d ~/i/Blog ]
+  if [ -d ~/i/Blog/content ]
   then
-    cd ~/i/Blog
+    cd ~/i/Blog/content
   else
-    cd ~/i/com
+    echo "The path ~/i/Blog/content does not exist."
   fi
 }
 
