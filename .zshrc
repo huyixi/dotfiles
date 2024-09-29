@@ -316,6 +316,7 @@ export PATH="/opt/homebrew/bin:$PATH"
 export PATH="/opt/homebrew/miniconda/bin:$PATH"
 export JAVA_HOME="/Library/Java/JavaVirtualMachines/zulu-11.jdk/Contents/Home"
 eval "$(rbenv init -)"
+export PATH="/opt/homebrew/opt/postgresql@16/bin:$PATH"
 
 # bun completions
 [ -s "/Users/huyixi/.bun/_bun" ] && source "/Users/huyixi/.bun/_bun"
