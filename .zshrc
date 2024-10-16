@@ -1,3 +1,5 @@
+# .zshrc
+zmodload zsh/zprof
 # git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt" --depth=1
 # ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
 
@@ -44,8 +46,7 @@ alias drf="cd ~/i/draft"
 alias dft="cd ~/i/draft"
 alias helloworld="cd ~/i/hello-world/docs"
 alias world="cd ~/i/world/docs"
-alias weekly="cd ~/i/weekly"
-alias week="cd ~/i/weekly"
+alias walk="cd ~/i/walk-think"
 alias temp="cd ~/i/temp"
 alias se="cd ~/i/software-engineer-interview-guide"
 alias note="cd ~/i/note"
