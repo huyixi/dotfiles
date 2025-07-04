@@ -1,0 +1,162 @@
+__build_info:
+  rime_version: 1.13.0
+  timestamps:
+    squirrel: 1744172206
+    squirrel.custom: 1744182127
+app_options:
+  com.apple.Terminal:
+    ascii_mode: true
+  com.jetbrains.WebStorm:
+    ascii_mode: true
+  com.jetbrains.pycharm:
+    ascii_mode: true
+  com.microsoft.VSCode:
+    ascii_mode: true
+  com.raycast.macos:
+    ascii_mode: true
+chord_duration: 0.1
+config_version: "2023-12-01"
+keyboard_layout: default
+preset_color_schemes:
+  macos_dark:
+    back_color: 0x252a2e
+    border_color: 0x050505
+    border_height: 4
+    border_width: 4
+    candidate_text_color: 0xe9e9ea
+    comment_font_face: PingFangSC
+    comment_font_point: 16
+    comment_text_color: 0x999999
+    corner_radius: 5
+    font_face: PingFangSC
+    font_point: 16
+    hilited_back_color: 0xD75A00
+    hilited_candidate_label_color: 0xFFFFFF
+    hilited_candidate_text_color: 0xFFFFFF
+    hilited_comment_text_color: 0x999999
+    hilited_corner_radius: 5
+    hilited_text_color: 0x999999
+    label_color: 0x999999
+    label_font_point: 12
+    line_spacing: 10
+    name: "MacOS 深色/MacOS Dark"
+    text_color: 0x252a2e
+    text_orientation: horizontal
+  macos_light:
+    alpha: 1
+    back_color: 0xFFFFFF
+    base_offset: 0
+    border_color: 0xFFFFFF
+    border_height: 1
+    border_width: 1
+    candidate_back_color: 0xFFFFFF
+    candidate_format: "%c %@ "
+    candidate_list_layout: linear
+    candidate_text_color: 0x3c3c3c
+    color_space: srgb
+    comment_font_face: PingFangSC
+    comment_font_point: 16
+    comment_text_color: 0x999999
+    corner_radius: 5
+    font_face: PingFangSC
+    font_point: 16
+    hilited_back_color: 0xD75A00
+    hilited_candidate_back_color: 0xD75A00
+    hilited_candidate_label_color: 0xFFFFFF
+    hilited_candidate_text_color: 0xFFFFFF
+    hilited_comment_text_color: 0xFFFFFF
+    hilited_corner_radius: 5
+    hilited_text_color: 0xFFFFFF
+    inline_preedit: true
+    label_color: 0x999999
+    label_font_face: PingFangSC
+    label_font_point: 12
+    line_spacing: 5
+    mutual_exclusive: false
+    name: "MacOS 浅色／MacOS Light"
+    shadow_size: 0
+    spacing: 10
+    surrounding_extra_expansion: 0
+    text_color: 0x424242
+    text_orientation: horizontal
+    translucency: false
+  wechat_dark:
+    alpha: 1
+    back_color: 0x151515
+    base_offset: 0
+    border_color: 0x292929
+    border_height: 1
+    border_width: 1
+    candidate_back_color: 0x151515
+    candidate_format: "%c %@ "
+    candidate_list_layout: linear
+    candidate_text_color: 0xbbbbbb
+    color_space: srgb
+    comment_font_face: PingFangSC
+    comment_font_point: 16
+    comment_text_color: 0x999999
+    corner_radius: 5
+    font_face: PingFangSC
+    font_point: 16
+    hilited_back_color: 0x79af22
+    hilited_candidate_back_color: 0x79af22
+    hilited_candidate_label_color: 0xFFFFFF
+    hilited_candidate_text_color: 0xFFFFFF
+    hilited_comment_text_color: 0xFFFFFF
+    hilited_corner_radius: 5
+    hilited_text_color: 0x999999
+    inline_preedit: true
+    label_color: 0x999999
+    label_font_face: PingFangSC
+    label_font_point: 13
+    line_spacing: 5
+    mutual_exclusive: false
+    name: "微信深色／Wechat Dark"
+    shadow_size: 0
+    spacing: 10
+    surrounding_extra_expansion: 0
+    text_color: 0xbbbbbb
+    text_orientation: horizontal
+    translucency: false
+  wechat_light:
+    alpha: 1
+    back_color: 0xFFFFFF
+    base_offset: 0
+    border_color: 0xFFFFFF
+    border_height: 1
+    border_width: 1
+    candidate_back_color: 0xFFFFFF
+    candidate_format: "%c %@ "
+    candidate_list_layout: linear
+    candidate_text_color: 0x3c3c3c
+    color_space: srgb
+    comment_font_face: PingFangSC
+    comment_font_point: 16
+    comment_text_color: 0x999999
+    corner_radius: 5
+    font_face: PingFangSC
+    font_point: 16
+    hilited_back_color: 0x79af22
+    hilited_candidate_back_color: 0x79af22
+    hilited_candidate_label_color: 0xFFFFFF
+    hilited_candidate_text_color: 0xFFFFFF
+    hilited_comment_text_color: 0x999999
+    hilited_corner_radius: 5
+    hilited_text_color: 0x999999
+    inline_preedit: true
+    label_color: 0x999999
+    label_font_face: PingFangSC
+    label_font_point: 13
+    line_spacing: 5
+    mutual_exclusive: false
+    name: "微信浅色／Wechat Light"
+    shadow_size: 0
+    spacing: 10
+    surrounding_extra_expansion: 0
+    text_color: 0x424242
+    text_orientation: horizontal
+    translucency: false
+show_notifications_when: appropriate
+style:
+  color_scheme: wechat_light
+  color_scheme_dark: wechat_dark
