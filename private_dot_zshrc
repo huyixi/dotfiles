@@ -58,7 +58,7 @@ alias inputswitch='/Users/huyixi/i/utils/toggle-input-method/target/release/togg
 alias bk='bash ~/i/automator/backup-config.sh'
 alias zshrc="source ~/.zshrc && cd ~/i/config && bk && gac 'update zshrc' && cd -"
 alias pnpmu="brew upgrade pnpm"
-
+alias cz=chezmoi
 # Go Folder Alias
 
 alias gd="cd ~/desktop"
