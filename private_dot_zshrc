@@ -404,8 +404,6 @@ alias binfo="brew info"
 # antfu: https://github.com/antfu/dotfiles/blob/main/.zshrc
 # Simon-He95: https://github.com/Simon-He95/awesome-collections/blob/bf5089729fe51251ba2338242ffdf587647caab3/zshrc/.zshrc#L164
 
-
-
 # C Programming
 function gccr() {
   gcc "$1.c" -o "$1" && ./"$1"
