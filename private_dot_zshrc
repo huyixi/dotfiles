@@ -79,7 +79,7 @@ alias gtmp="cd ~/i/temp"
 
 alias npm='pnpm'
 alias npx='pnpx'
-alias nr='pnpm run'
+# alias nr='pnpm run'
 alias nid='pnpm install -D'
 alias nu='pnpm update'
 alias nrm='pnpm remove'
