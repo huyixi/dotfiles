@@ -50,6 +50,7 @@ export PATH="/opt/homebrew/bin:$PATH"                           # Homebrew binar
 
 # System
 alias lock="pmset displaysleepnow"
+alias nq = “networkQuality”
 
 # Script Alias
 alias cpu="sudo mactop"
